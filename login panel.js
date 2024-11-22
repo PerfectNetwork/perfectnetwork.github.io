@@ -19,7 +19,7 @@ function checkLogin(event) {
         // إخفاء الرسالة بعد 5 ثوانٍ والتوجه إلى الصفحة الرئيسية
         setTimeout(function() {
             successMessage.style.display = 'none'; // إخفاء الرسالة
-            window.location.href = 'index.html'; // التوجه إلى الصفحة الرئيسية (قم بتغيير الرابط حسب حاجتك)
+            window.location.href = 'https://docs.google.com/forms/u/2/'; // التوجه إلى الصفحة الرئيسية (قم بتغيير الرابط حسب حاجتك)
         }, 5000); // 5 ثوانٍ
     } else {
         // إذا كانت البيانات خاطئة، إظهار رسالة الخطأ
