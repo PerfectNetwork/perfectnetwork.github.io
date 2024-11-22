@@ -12,6 +12,10 @@ function checkLogin(event) {
         var successMessage = document.getElementById('success-message');
         successMessage.style.display = 'block'; // إظهار الرسالة
 
+        // تغيير النص من "تسجيل دخول" إلى "تسجيل خروج"
+        var loginButton = document.getElementById("login-button");
+        loginButton.textContent = "LOGOUT";  // تغيير النص إلى "تسجيل خروج"
+        
         // إخفاء الرسالة بعد 5 ثوانٍ والتوجه إلى الصفحة الرئيسية
         setTimeout(function() {
             successMessage.style.display = 'none'; // إخفاء الرسالة
