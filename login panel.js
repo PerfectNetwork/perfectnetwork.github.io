@@ -7,7 +7,7 @@ function checkLogin(event) {
     var password = document.getElementById('login-password').value;
 
     // التحقق من صحة البيانات المدخلة
-    if ((username === "7ORS" && password === "852010") || (username === "Nero x" && password === "7774527")) {
+    if ((username === "7ORS" && password === "852010") || (username === "Nero x" && password === "7774527") || (username === "sCAy" && password === "258963147")) {
         // إذا كانت البيانات صحيحة، اعرض الرسالة
         var successMessage = document.getElementById('success-message');
         successMessage.style.display = 'block'; // إظهار الرسالة
