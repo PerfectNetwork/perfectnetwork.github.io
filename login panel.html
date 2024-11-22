@@ -37,7 +37,7 @@
                     <label>PASSWORD</label>
                 </div>
                 <p id="error-message" style="color: red; display: none;">عفوا كلمه السر او الحساب خاطئ برجاء التواصل مع احد الاداريين</p>
-                <button type="submit">LOGIN</button>
+                <button type="submit" id="login-button">LOGIN</button>
                 <a href="#" class="forgot-password">FORGOT PASSWORD?</a>
                 <p>Don't have an account? <a href="#" id="show-register">Sign Up</a></p>
 
@@ -50,6 +50,39 @@
             <p id="success-message" style="color: green; display: none;">تم تسجيل الدخول بنجاح، أهلاً بعودتك يا سيدي</p>
         </div>
     </div>
-    <script src="login panel.js"></script>
+    
+    <script>
+        let isLoggedIn = false;  // حالة تسجيل الدخول
+
+        function toggleLoginLogout() {
+            const loginButton = document.getElementById("login-button");
+            if (isLoggedIn) {
+                loginButton.textContent = "LOGIN";  // إرجاع النص إلى تسجيل دخول
+                isLoggedIn = false;
+                document.getElementById("success-message").style.display = "none"; // إخفاء رسالة النجاح
+            } else {
+                loginButton.textContent = "LOGOUT";  // تغيير النص إلى تسجيل خروج
+                isLoggedIn = true;
+                document.getElementById("success-message").style.display = "block"; // عرض رسالة النجاح
+            }
+        }
+
+        function checkLogin(event) {
+            event.preventDefault();  // منع إرسال النموذج
+
+            // تحقق من بيانات تسجيل الدخول هنا (مثال: التحقق من المستخدم وكلمة المرور)
+            const username = document.getElementById("login-username").value;
+            const password = document.getElementById("login-password").value;
+
+            if (username === "user" && password === "password") {
+                // في حال كان تسجيل الدخول ناجح
+                toggleLoginLogout();  // تغيير النص
+            } else {
+                // في حال كان هناك خطأ في البيانات
+                document.getElementById("error-message").style.display = "block";
+            }
+        }
+    </script>
+    
 </body>
 </html>
