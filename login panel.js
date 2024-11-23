@@ -7,15 +7,11 @@ function checkLogin(event) {
     var password = document.getElementById('login-password').value;
 
     // التحقق من صحة البيانات المدخلة
-    if ((username === "7ORS" && password === "852010") || (username === "Nero x" && password === "7774527") || (username === "sCAy" && password === "258963147")) {
+    if ((username === "7ORS" && password === "852010") || (username === "Nero x" && password === "7774527")) {
         // إذا كانت البيانات صحيحة، اعرض الرسالة
         var successMessage = document.getElementById('success-message');
         successMessage.style.display = 'block'; // إظهار الرسالة
 
-        // تغيير النص من "تسجيل دخول" إلى "تسجيل خروج"
-        var loginButton = document.getElementById("login-button");
-        loginButton.textContent = "LOGOUT";  // تغيير النص إلى "تسجيل خروج"
-        
         // إخفاء الرسالة بعد 5 ثوانٍ والتوجه إلى الصفحة الرئيسية
         setTimeout(function() {
             successMessage.style.display = 'none'; // إخفاء الرسالة
