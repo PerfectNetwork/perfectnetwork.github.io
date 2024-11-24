@@ -164,3 +164,8 @@ p a {
     font-size: 16px;
     text-align: center;
 }
+
+.btn:not(.btn-outline):not(.btn-dashed):not(.btn-bordered):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon):not(.btn-hover-outline) {
+    border: 0;
+    padding: calc(.775rem + 1px) calc(1.5rem + 1px);
+}
