@@ -23,19 +23,24 @@ body {
     color: #fff;
 }
 
-/* تخصيص شريط التمرير */
+/* تعديل شريط التمرير (يعمل في المتصفحات المبنية على Webkit مثل Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 6px; /* عرض شريط التمرير */
-    background-color: #1c1c28; /* لون الخلفية */
+    width: 12px; /* عرض الشريط */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #4a56c2; /* لون الجزء القابل للسحب */
-    border-radius: 10px; /* لتدوير زوايا شريط التمرير */
+    background-color: rgba(255, 255, 255, 0.5); /* لون السهم مع الشفافية */
+    border-radius: 10px; /* جعل الحواف مستديرة */
+    border: 3px solid #0d0d27; /* إطار حول السهم */
+    transition: background-color 0.3s ease-in-out; /* إضافة حركة سلسة */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #3b45a0; /* لون عند التمرير */
+    background-color: rgba(0, 200, 255, 0.7); /* لون السهم عند التمرير مع الشفافية */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0d0d27; /* لون خلفية شريط التمرير */
 }
 
 .login-container {
