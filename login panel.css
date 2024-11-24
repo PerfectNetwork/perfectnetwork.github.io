@@ -23,6 +23,21 @@ body {
     color: #fff;
 }
 
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+    width: 12px; /* عرض شريط التمرير */
+    background-color: #1c1c28; /* لون الخلفية */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4a56c2; /* لون الجزء القابل للسحب */
+    border-radius: 10px; /* لتدوير زوايا شريط التمرير */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3b45a0; /* لون عند التمرير */
+}
+
 .login-container {
     display: flex;
     justify-content: center;
@@ -41,7 +56,6 @@ body {
     position: relative;  /* إضافة هذه الخاصية لجعل top تعمل */
     top: -161px; /* رفع العنصر بمقدار 1px */
 }
-
 
 h2 {
     margin-bottom: 20px;
