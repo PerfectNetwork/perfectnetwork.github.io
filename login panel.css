@@ -23,7 +23,7 @@ body {
     color: #fff;
 }
 
-/* تعديل شريط التمرير (يعمل في المتصفحات المبنية على Webkit مثل Chrome, Safari) */
+/* تعديل شريط التمرير */
 ::-webkit-scrollbar {
     width: 12px; /* عرض الشريط */
 }
@@ -32,11 +32,11 @@ body {
     background-color: rgba(255, 255, 255, 0.5); /* لون السهم مع الشفافية */
     border-radius: 10px; /* جعل الحواف مستديرة */
     border: 3px solid #0d0d27; /* إطار حول السهم */
-    transition: background-color 0.3s ease-in-out; /* إضافة حركة سلسة */
+    transition: background-color 0.3s ease-in-out; /* حركة سلسة */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 200, 255, 0.7); /* لون السهم عند التمرير مع الشفافية */
+    background-color: rgba(0, 200, 255, 0.7); /* لون السهم عند التمرير */
 }
 
 ::-webkit-scrollbar-track {
@@ -58,8 +58,8 @@ body {
     text-align: center;
     width: 100%;
     max-width: 400px;
-    position: relative;  /* إضافة هذه الخاصية لجعل top تعمل */
-    top: -161px; /* رفع العنصر بمقدار 1px */
+    position: relative;
+    top: -160px; /* رفع العنصر */
 }
 
 h2 {
@@ -167,21 +167,23 @@ p a {
     font-size: 14px;
 }
 
-/* تنسيق الرسالة لتظهر تحت قسم كلمة المرور */
+/* تنسيق الرسالة */
 #login-password {
-    margin-bottom: 10px; /* إضافة مساحة تحت حقل كلمة المرور */
+    margin-bottom: 10px; /* مسافة تحت حقل كلمة المرور */
 }
 
 #error-message {
-    margin-top: 10px; /* إضافة مسافة من الأعلى */
-    font-size: 14px; /* حجم الخط للرسالة */
-    text-align: center; /* محاذاة النص في الوسط */
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #ff4d4d;
 }
 
 #success-message {
     margin-top: 20px;
     font-size: 16px;
     text-align: center;
+    color: #4caf50;
 }
 
 .btn:not(.btn-outline):not(.btn-dashed):not(.btn-bordered):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon):not(.btn-hover-outline) {
