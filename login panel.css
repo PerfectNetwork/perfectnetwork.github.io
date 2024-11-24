@@ -36,7 +36,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 200, 255, 0.7); /* لون السهم عند التمرير */
+    background: linear-gradient(135deg, #1c1c28, #2a2a40); /* لون السهم عند التمرير */
+}
+
 }
 
 ::-webkit-scrollbar-track {
