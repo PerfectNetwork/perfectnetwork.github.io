@@ -25,7 +25,7 @@ body {
 
 /* تخصيص شريط التمرير */
 ::-webkit-scrollbar {
-    width: 12px; /* عرض شريط التمرير */
+    width: 6px; /* عرض شريط التمرير */
     background-color: #1c1c28; /* لون الخلفية */
 }
 
