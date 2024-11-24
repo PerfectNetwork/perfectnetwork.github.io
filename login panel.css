@@ -39,7 +39,7 @@ body {
     width: 100%;
     max-width: 400px;
     position: relative;  /* إضافة هذه الخاصية لجعل top تعمل */
-    top: -93px; /* رفع العنصر بمقدار 1px */
+    top: -161px; /* رفع العنصر بمقدار 1px */
 }
 
 
