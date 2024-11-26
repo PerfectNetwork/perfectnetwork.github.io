@@ -12,7 +12,7 @@
         });
     });
 
-    // العد التنازلي للأرقام
+    // العد التصاعدي للأرقام
     document.addEventListener("DOMContentLoaded", function() {
         const counters = document.querySelectorAll('.stat-number');
         
@@ -23,10 +23,10 @@
                 const increment = target / 200;
                 
                 if (count < target) {
-                    counter.innerText = Math.ceil(count + increment);
-                    setTimeout(updateCount, 10);
+                    counter.innerText = Math.ceil(count + increment); // زيادة العد تدريجيا
+                    setTimeout(updateCount, 10); // التحديث بعد 10 ميلي ثانية
                 } else {
-                    counter.innerText = target;
+                    counter.innerText = target; // عند الوصول للهدف، عرض الرقم النهائي
                 }
             };
             updateCount();
