@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             if (count < target) {
                 counter.innerText = Math.ceil(count + increment); // زيادة العد تدريجيا
-                setTimeout(updateCount, 10); // التحديث بعد 10 ميلي ثانية
+                setTimeout(updateCount, 20); // التحديث بعد 10 ميلي ثانية
             } else {
                 // إضافة "+" فقط إذا كانت القيمة هي 120 أو 130
                 if (target === 120 || target === 130) {
