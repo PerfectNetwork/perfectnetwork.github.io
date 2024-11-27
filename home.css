@@ -13,6 +13,12 @@ body {
     line-height: 1.6;
 }
 
+/* تنسيقات إضافية */
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
 nav {
     background-color: rgba(15, 23, 42, 0.7); /* لون خلفية شريط التنقل أزرق غامق */
     padding: 10px;
@@ -21,7 +27,7 @@ nav {
 
 .navbar-brand img {
     height: 44px;
-    margin-left: -91px;
+    margin-left: 90px;
     margin-right: 1px;
 }
 
@@ -233,9 +239,16 @@ nav {
 }
 
 .card .card-body {
-    padding: 2rem 2.25rem;
+    position: relative;
+    padding: 1rem 2.25rem;
     color: white; /* لون النص أبيض */
-    background-color: black !important; /* إجبار الخلفية أن تكون سوداء */
+    background-color: #1e1e3f !important; /* إجبار الخلفية أن تكون سوداء */
+    border: 2px solid #9fabbd;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(159, 171, 189, 0.5);
 }
 
 .card .card-body a {
@@ -250,6 +263,68 @@ nav {
 .card:hover {
     transform: translateY(-10px); /* تحريك الكارت لأعلى عند التمرير */
 }
+
+/* إعدادات البطاقات */
+.character-card {
+    position: relative;
+    width: 200px;
+    height: 212px; /* زيادة الارتفاع لاستيعاب النصوص */
+    margin: 10px;
+    border: 2px solid #9fabbd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #1e1e3f; /* خلفية البطاقات */
+    color: #9fabbd;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(159, 171, 189, 0.5);
+}
+
+.character-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 15px; /* مسافة للصورة من الأعلى */
+}
+
+.card-body {
+    margin-top: 1px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.card-rank {
+    font-size: 14px;
+    color: #00c8ff; /* لون النص الرئيسي */
+    margin: 5px 0;
+}
+
+.card-text {
+    font-size: 12px;
+    color: #a0aec0; /* لون النص الفاتح */
+    margin: 5px 0;
+}
+
+/* تأثير التحويم على الكارت */
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.7);
+}
+
+/* إضافة البطاقات إلى تخطيط الصفحة */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px; /* مسافة بين البطاقات */
+}
+
 
 .row {
     display: flex;
