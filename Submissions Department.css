@@ -100,8 +100,8 @@ a.card:hover {
 
 /* تخصيص لون "مغلق" في الكروت */
 .card-1 .badge.closed {
-    background-color: #302024;
-    color: #e42855;
+    background-color: #25612a;
+    color: #cccccc;
     border-radius: 5px;
     padding: 5px 20px;
 }
