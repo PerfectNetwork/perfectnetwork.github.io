@@ -1,6 +1,5 @@
 body {
-    background-color: #1b1f26; /* لون الخلفية الداكنة */
-    background: url('imgs/body/background.png') no-repeat center center/cover;
+    background-color: #1b1f26; /* لون الخلفية الداكنة 
     height: 100vh; /* اجعل الارتفاع 100% من عرض الشاشة */
     display: flex;
     justify-content: center; /* توسيط الكروت أفقيًا */
