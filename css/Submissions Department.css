@@ -1,5 +1,6 @@
 body {
-    background-color: #1b1f26; /* لون الخلفية الداكنة 
+    background-color: #1b1f26; /* لون الخلفية الداكنة */
+    background: url('imgs/body/background.png') no-repeat center center/cover;
     height: 100vh; /* اجعل الارتفاع 100% من عرض الشاشة */
     display: flex;
     justify-content: center; /* توسيط الكروت أفقيًا */
@@ -99,8 +100,8 @@ a.card:hover {
 
 /* تخصيص لون "مغلق" في الكروت */
 .card-1 .badge.closed {
-    background-color: #25612a;
-    color: #cccccc;
+    background-color: #302024;
+    color: #e42855;
     border-radius: 5px;
     padding: 5px 20px;
 }
@@ -182,3 +183,4 @@ a.card:hover {
     text-decoration: none; /* إزالة التسطير تحت الرابط */
     font-size: 12px;
 }
+
