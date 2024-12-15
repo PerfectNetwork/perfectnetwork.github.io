@@ -46,11 +46,17 @@
                 </div>
 
     <!-- نموذج hCaptcha -->
-    <section id="form-section" class="container py-5">
-        <h2 class="text-center text-white">تأكيد الهوية</h2>
-        <form action="your-backend-endpoint" method="POST" class="mt-4">
-        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-    </section>
+<form action="your-backend-endpoint" method="POST">
+  <!-- عناصر النموذج الأخرى -->
+  
+  <!-- كود hCaptcha -->
+  <div class="h-captcha" data-sitekey="YOUR_SITE_KEY"></div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
             </form>
             <p id="success-message" style="color: green; display: none;">تم تسجيل الدخول بنجاح، أهلاً بعودتك يا سيدي</p>
         </div>
