@@ -73,6 +73,26 @@
         <p class="text-center fs-4">سيرفر "برفكت نيتورك" للحياة الواقعية هو مجتمع افتراضي داخل منصة MTA:SA يهدف إلى توفير بيئة ممتعة ومرحة للأشخاص الذين يرغبون في التواصل والتفاعل مع بعضهم البعض داخل عالم افتراضي. يعتبر هذا السيرفر مكانًا للترفيه والتسلية والتعارف، حيث يمكن للأعضاء التفاعل مع بعضهم البعض من خلال تقمص الأدوار الواقعية والألعاب والفعاليات المختلفة.</p>
     </section>
 
+    <!-- نموذج hCaptcha -->
+    <section id="form-section" class="container py-5">
+        <h2 class="text-center text-white">تأكيد الهوية</h2>
+        <form action="your-backend-endpoint" method="POST" class="mt-4">
+            <!-- عناصر النموذج الأخرى -->
+            <div class="form-group mb-4">
+                <label for="username" class="form-label text-white">اسم المستخدم:</label>
+                <input type="text" id="username" name="username" class="form-control" placeholder="أدخل اسم المستخدم" required>
+            </div>
+            <div class="form-group mb-4">
+                <label for="email" class="form-label text-white">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="أدخل بريدك الإلكتروني" required>
+            </div>
+            <!-- كود hCaptcha -->
+            <div class="h-captcha mb-4" data-sitekey="0a006cd6-9982-4642-832c-327c39e8fcf8"></div>
+            <button type="submit" class="btn btn-lg btn-light-danger">إرسال</button>
+        </form>
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    </section>
+
 <!-- الإحصائيات -->
 <div class="container py-10" id="server-stats"> 
     <div class="card"> 
